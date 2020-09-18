@@ -8,8 +8,12 @@ Agregue el tag de header.
 Agregue el tag main y meti el contenido de la pagina en los tags excepto por el parrafo de all rights reserved.
 Agregue el tag section y meti el div de la imagen ahi.
 Agregue el tag footer hasta abajo y puse el parrafo All rights reserved dentro del tag.
+Agregue el tag de description
 
 Commandos Git:
 git add .
 git commit -m "Agregue tags para corregir estructura del html y este sea accesible."
+git push
+git add .
+git commit -m "Agregue un tag mas"
 git push
