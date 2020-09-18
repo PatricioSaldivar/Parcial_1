@@ -30,7 +30,17 @@ Crea una funcion llamada: challenge1  que realice lo siguiente:
 **/
 
 // CREA TU FUNCION challenge1 aqui 
-
+function challenge1(){
+    var cuantosBtns = prompt("Cuantos botones?");
+    for(var i=0; i<cuantosBtns; i++){
+        var newBtn = document.createElement('button');
+        newBtn.textContent = nombres[i];
+        if(newBtn.textContent === ''){
+            newBtn.textContent = 'undefined';
+        }
+        document.getElementById('dummy').appendChild(newBtn);
+    }
+  		}
 
 
 // ************** PARTE 2    **************
@@ -41,7 +51,11 @@ Crea una funcion llamada: challenge2 que utilizando un FOR convierta todos los n
 **/
 
 // CREA TU FUNCION challenge2 2 aquí.
-
+function challenge2(){
+  nombres.forEach(item => { 
+      console.log(item.toUpperCase());
+      });
+  		}
 
 
 // ************** PARTE 3    **************
@@ -67,7 +81,41 @@ Deberia escribir en consola la concatenación de nombre + color + raza para el o
 Invoca la función para validar su funcionalidad.
 
 */
+function Dog() {
+  this.Nombre = "";
+  this.Color = "";
+  this.Raza = "";
+}
+function challenge3(){
+var dog1 = Object.create(Dog);
+var dog2 = Object.create(Dog);
+var dog3 = Object.create(Dog);
 
+dog1.Nombre = "Juan";
+dog1.Color = "Cafe";
+dog1.Raza = "Pug";
+
+dog2.Nombre = "Lucas";
+dog2.Color = "Blanco";
+dog2.Raza = "Husky";
+
+dog3.Nombre = "Pedro";
+dog3.Color = "Negro";
+dog3.Raza = "Chihuahua";
+
+console.log(dog1);
+console.log(dog2);
+console.log(dog3);
+
+printInfo(dog1);
+printInfo(dog2);
+printInfo(dog3);
+}
+
+function printInfo(dog){
+    console.log(`Nombre: ${dog.Nombre} , De color: ${dog.Color} , Raza: ${dog.Raza}`);
+
+}
 
 
 
@@ -80,7 +128,7 @@ Invoca la función para validar su funcionalidad.
 
     <button onclick="challenge1()">Challenge 1</button>
     <button onclick="challenge2()">Challenge 2</button>
-    <button onclick="challenge3()">Challenge 2</button>
+    <button onclick="challenge3()">Challenge 3</button>
 
   
 <div id = "dummy">

@@ -1,73 +1,147 @@
-header {
-
-
+@media (min-width:991px)  {
+.content{
+  display: flex;
+  flex-flow: row;
 }
 
+.slidebox{
+ 
+  margin: 5%;
+  padding: 10%;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+    border: 2px solid black;
+}
 
-h2 {
+.aside{
+    display: flex;
+    width: 33%;
+    flex-flow: column;
+    border: 2px solid black;
+   
+}
+.article {
+  display: flex;
+  width: 60%;
+  flex-flow: row;
+  border: 2px solid black;
+} 
+.poem{
+border: 2px solid black;
 
+}
+header{
+  list-style: none;
+  text-align: center;
+  padding: 0px;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+h2{
+  border: 2px solid black;
+  margin: 5px;
+  padding: 10px;
+  width: 33%;
 }
 
 .nav {
-
-
+list-style: none;
+text-align: center;
+padding: 0px;
+display: flex;
+flex-flow: row;
+justify-content: flex-end;
   }
-
-  li {
-
-
+  .nav > li{
+    border: 2px solid black;
+    margin: 5px;
+    padding: 10px;
+    width: 15%;
+    
   }
-
-  .content{
-
 }
-
-  .aside {
-
-  }
-
-  .slidebox{
-
-   
-  }
-
-  .article{
-
-  }
-
-
-.poem{
-
-}
-
 
 /*Device = Tablets, Ipads (portrait)
   Screen = B/w 600px to 990px*/
   @media (min-width:600px) and (max-width: 990px)  {
+    
+    .content{
+      display: flex;
+      flex-flow: row;
+    }
+
+    .slidebox{
+     
+      margin: 5%;
+      padding: 10%;
+      text-align: center;
+      display: flex;
+      flex-flow: column;
+        border: 2px solid black;
+    }
+
+    .aside{
+        display: flex;
+        width: 33%;
+        flex-flow: column;
+        border: 2px solid black;
+       
+    }
     .article {
-
+      display: flex;
+      width: 60%;
+      flex-flow: column;
+      border: 2px solid black;
   } 
-header{
+  .poem{
+    border: 2px solid black;
+    margin: 5%;
+    padding: 10%;
 
-}
+  }
+  header{
+  display: none;
+  }
+
+  .nav {
+    list-style: none;
+    text-align: center;
+    padding: 0px;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+      }
+      .nav > li{
+        border: 2px solid black;
+        margin: 5px;
+        padding: 10px;
+        
+      }
 }
 
 /*  Small devices    */
 @media (max-width:599px) {
 
 header,.content{
-
+  display: none;
 }
 
 .nav {
-
-
+list-style: none;
+text-align: center;
+padding: 0px;
+flex-flow: column;
   }
 
 
 .nav > li {
-
+padding: 10px;
+margin-bottom: 20%;
+border: 2px solid black;
 }
+
 
 
 }
